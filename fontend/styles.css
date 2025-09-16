@@ -1,0 +1,83 @@
+/* Reset CSS cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Biến CSS (Custom Variables) */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+}
+
+/* Style cho container */
+.container {
+  max-width: 80%;
+  margin: 2rem auto; /* Margin ngoài, top và bottom 2rem, left và right auto để căn giữa */
+  padding: 1rem; /* Padding bên trong */
+  border: 2px solid var(--primary-color); /* Viền */
+  border-radius: 10px; /* Bo góc */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng */
+}
+
+/* Style cho tiêu đề */
+h1 {
+  font-family: Arial, sans-serif; /* Font chữ */
+  font-size: 2rem; /* Kích thước chữ */
+  font-weight: bold; /* Độ đậm của chữ */
+  color: var(--primary-color); /* Màu chữ từ biến */
+  margin-bottom: 1rem; /* Margin dưới */
+}
+
+/* Style cho input */
+input {
+  padding: 0.5rem; /* Padding bên trong */
+  margin-right: 1rem; /* Margin phải */
+  border: 1px solid #ccc; /* Viền */
+  border-radius: 5px; /* Bo góc */
+  font-size: 1rem; /* Kích thước chữ */
+}
+
+/* Style cho button */
+button {
+  padding: 0.5rem 1rem; /* Padding, chiều ngang 1rem, chiều dọc 0.5rem */
+  background-color: var(--secondary-color); /* Màu nền */
+  border: none; /* Loại bỏ viền mặc định */
+  border-radius: 5px; /* Bo góc */
+  color: white; /* Màu chữ */
+  font-weight: 600; /* Độ đậm */
+  cursor: pointer; /* Con trỏ tay khi hover */
+}
+
+/* Style cho link */
+a {
+  color: var(--primary-color);
+  text-decoration: none; /* Loại bỏ gạch chân */
+  margin-left: 1rem; /* Margin trái */
+}
+
+a:hover {
+  text-decoration: underline; /* Thêm gạch chân khi hover */
+}
+
+/* Style cho span */
+span {
+  font-family: "Times New Roman", serif;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+/* Style cho danh sách */
+.list {
+  display: flex; /* Sử dụng flex-box */
+  flex-direction: column; /* Hiển thị cột */
+  margin-top: 1rem; /* Margin trên */
+  padding: 1rem; /* Padding bên trong */
+  list-style-type: none; /* Loại bỏ dấu chấm mặc định */
+}
+
+.list li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc; /* Viền dưới mỗi mục */
+}
