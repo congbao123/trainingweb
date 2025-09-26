@@ -124,14 +124,14 @@
 
 .news-item-title {
   padding: 15px 15px 10px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   color: #333;
   line-height: 1.4;
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  /* -webkit-box-orient: vertical; */
   overflow: hidden;
 }
 

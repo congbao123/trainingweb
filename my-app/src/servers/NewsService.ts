@@ -81,7 +81,7 @@ export const NewsService = {
   //  helper để dùng country=vi
   getHotNews: () => NewsService.getLatestNews('&country=vi'),
   // getLatestNewsData: () => NewsService.getLatestNews('&country=vi&language=vi&size=6'),
-  getFeaturedNews: () => NewsService.getLatestNews('&country=vi&language=vi,hy&category=other&size=7'),
+  getFeaturedNews: () => NewsService.getLatestNews('&country=vi&language=vi,hy&category=other&size=8'),
   // getCryptoNews: () => NewsService.getLatestNews('&country=vi&language=vi&category=technology&size=4'), 
 }
 

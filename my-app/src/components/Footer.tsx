@@ -77,16 +77,16 @@ export function Footer() {
           <div>
             <h3 className="footer-section-title">Liên hệ</h3>
             <ul className="footer-contact">
-              <li>Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</li>
+              <li>Địa chỉ: 31 Nguyễn Thiếp, TP.Đà Nẵng</li>
               <li>Điện thoại: (028) 1234 5678</li>
-              <li>Email: info@baovietnam.vn</li>
-              <li>Hotline: 1900 1234</li>
+              <li>Email: baoquocte@baoquocte.vn</li>
+              <li>Hotline: 1900 1290</li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p className="footer-copyright">© 2024 Báo Việt Nam. Tất cả quyền được bảo lưu.</p>
+          <p className="footer-copyright">© 2025 Báo quốc tế. Tất cả quyền được bảo lưu.</p>
           <div className="footer-bottom-links">
             {[
               { to: "/chinh-sach-bao-mat", text: "Chính sách bảo mật" },
