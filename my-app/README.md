@@ -1,69 +1,32 @@
-# React + TypeScript + Vite
+# Báo Quốc Tế
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ứng dụng tin tức hiện đại được xây dựng bằng React, TypeScript và Redux Toolkit, lấy dữ liệu tin tức thời gian thực từ API NewsData.io. Ứng dụng hiển thị tin nóng, tin mới nhất, tin nổi bật và hỗ trợ xem chi tiết bài báo, tập trung vào hiệu suất và khả năng mở rộng.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tính năng
 
-## Expanding the ESLint configuration
+Hiển thị tin nóng (bài báo nổi bật) và tin mới nhất (danh sách bài báo gần đây).
+Trưng bày tin nổi bật trong danh sách được chọn lọc.
+Xem chi tiết bài báo bằng ID mà không cần gọi thêm API.
+Thiết kế responsive, tương thích máy tính và di động.
+Xử lý lỗi và trạng thái tải để nâng cao trải nghiệm người dùng.
+Kiến trúc có thể mở rộng để thêm tính năng như tìm kiếm hoặc lọc theo danh mục/quốc gia.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Yêu cầu
+Node.js (phiên bản 14 trở lên)
+npm hoặc yarn
+## Cài đặt
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/congbao123/trainingweb.git
+   cd my-app 
