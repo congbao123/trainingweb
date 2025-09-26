@@ -86,7 +86,7 @@ class Animal {
   constructor(public name: string) {}
   eat() {
     console.log(`${this.name} động vật ăn cỏ`);
-  }
+  } 
 }
 
 class Lion extends Animal {

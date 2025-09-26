@@ -1,0 +1,51 @@
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.hot-news .hot-news-card {
+  max-width: 100%;
+}
+
+.latest-news .news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.featured-news,
+.crypto-news {
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 10px;
+  }
+
+  .latest-news .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.ad-banner img{
+  width: 100%;
+  height: 160px;
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  height: 100vh;    
+}

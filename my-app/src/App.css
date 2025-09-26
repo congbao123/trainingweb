@@ -1,8 +1,22 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+}
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%; /* Full width */
+  min-height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column; /* Sắp xếp dọc: Header, nội dung, Footer */
   text-align: center;
+}
+
+.app-wrapper {
+  flex: 1; /* Nội dung chính lấp đầy khoảng trống giữa Header và Footer */
 }
 
 .logo {
@@ -11,9 +25,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,4 +55,21 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-wrapper {
+    padding: 1rem; /* Giảm padding trên mobile */
+  }
+
+  .logo {
+    height: 4em; /* Giảm kích thước logo trên mobile */
+    padding: 1em;
+  }
+
+  button {
+    width: 100%; /* Button full width trên mobile */
+    margin: 5px 0;
+  }
 }

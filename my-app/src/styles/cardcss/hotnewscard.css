@@ -1,0 +1,138 @@
+/* Modern Hot News Card Styles */
+.hot-news-card {
+  display: flex;
+  background: white;
+  border-radius: 8px; /* Giảm từ 20px để đơn giản */
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Giảm shadow cho nhẹ nhàng */
+  border: 1px solid #e5e7eb; /* Thêm viền nhẹ nhàng */
+  position: relative;
+}
+
+/* Loại bỏ gradient animation */
+.hot-news-card::before {
+  content: none; /* Xóa gradient */
+}
+
+/* Loại bỏ animation keyframes */
+@keyframes gradientShift {
+  /* Không cần nữa, để trống */
+}
+
+/* Loại bỏ hover effects nhảy nhót */
+.hot-news-card:hover {
+  /* Xóa transform và scale */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Chỉ tăng nhẹ shadow khi hover */
+  color: #3b82f6;
+}
+
+.hot-news-image {
+  flex: 0 0 40%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hot-news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Loại bỏ transition scale khi hover */
+}
+
+.hot-news-content {
+  flex: 1;
+  padding: 20px; /* Giảm từ 30px để gọn */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hot-news-title {
+  font-size: 1.3rem; /* Giảm từ 1.5rem cho đơn giản */
+  font-weight: 600; /* Giảm từ 700 cho nhẹ nhàng */
+  color: #1e293b;
+  margin-bottom: 10px; /* Giảm từ 15px */
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.hot-news-title:hover{
+  color: #3b82f6;
+} 
+.hot-news-description {
+  color: #64748b;
+  font-size: 0.95rem; /* Giảm từ 1rem */
+  line-height: 1.6;
+  margin-bottom: 15px; /* Giảm từ 20px */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hot-news-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Giảm từ 15px */
+}
+
+.hot-news-date {
+  color: #6b7280;
+  font-size: 0.85rem; /* Giảm từ 0.9rem */
+  font-weight: 500;
+  background: #f1f5f9;
+  padding: 4px 8px; /* Giảm từ 6px 12px */
+  border-radius: 12px; /* Giảm từ 20px */
+}
+
+.hot-news-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; /* Giảm từ 8px */
+}
+
+.hot-news-keyword {
+  background: #3b82f6; /* Loại gradient, dùng màu cố định */
+  color: white;
+  padding: 4px 8px; /* Giảm từ 6px 12px */
+  border-radius: 10px; /* Giảm từ 15px */
+  font-size: 0.75rem; /* Giảm từ 0.8rem */
+  font-weight: 500;
+  /* Loại bỏ hover effect */
+}
+
+.hot-news-keyword:hover {
+  transform: none; /* Xóa hiệu ứng scale */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hot-news-card {
+    flex-direction: column;
+    border-radius: 6px; /* Giảm từ 15px */
+  }
+
+  .hot-news-image {
+    flex: none;
+    height: 180px; /* Giảm từ 200px */
+  }
+
+  .hot-news-content {
+    padding: 15px; /* Giảm từ 20px */
+  }
+
+  .hot-news-title {
+    font-size: 1.1rem; /* Giảm từ 1.3rem */
+  }
+
+  .hot-news-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
