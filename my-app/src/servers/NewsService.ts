@@ -28,7 +28,7 @@ interface NewsResponse {
   error?: string;
 }
 
-const API_KEY = 'pub_a8e8d60ec2134ea0911e96f56fb852ca';
+const API_KEY = 'pub_cf69ba2e083d43cbb29e1b5b35128748';
 
 export const NewsService = {
   getLatestNews: async (params: string = ''): Promise<NewsResponse> => {
