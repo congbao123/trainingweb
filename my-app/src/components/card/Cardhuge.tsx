@@ -1,15 +1,8 @@
 import type React from "react"
 import { Link } from "react-router-dom";
 import "../../styles/cardcss/Cardhuge.css"
+import type { NewsItem } from "../../servers/NewsService";
 
-interface NewsItem {
-  article_id: string
-  title: string
-  description: string
-  pubDate: string
-  image_url?: string
-  keywords?: string[]
-}
 
 interface CardhugeCardProps {
   featuredNews: NewsItem[]

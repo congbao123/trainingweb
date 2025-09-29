@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { setCategoryNews, setDetailNews } from "../redux/newsSlice";
 import { NewsService, type NewsItem } from "../servers/NewsService";
-import NewsCard from "../components/card/cardnew";
 import "../styles/category.css"; // CSS cho trang
 import { Loading } from "../components/loading";
 import type { RootState } from "../redux/store";

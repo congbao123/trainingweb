@@ -22,7 +22,7 @@ const Home: React.FC = () => {
   const { loading, error } = useNewsData();
   const hotNews = useSelector(selectHotNews);
   const latestNews = useSelector(selectLatestNews);
-  const featuredNews = useSelector(selectFeaturedNews);
+  const featuredNews: NewsItem[] = useSelector(selectFeaturedNews);
 
   const handleNewsClick = (news: NewsItem, event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
