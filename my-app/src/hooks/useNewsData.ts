@@ -21,8 +21,9 @@ export const useNewsData = () => {
         if (!featuredRes.success) throw new Error(featuredRes.error || 'Featured news error');
 
         // Dispatch phần tử đầu tiên cho Tin Nóng
-        
-        dispatch(setHotNews(hotRes.data?.results[0] || null));
+        if (hotRes.data?.results[0]) {
+          dispatch(setHotNews(hotRes.data.results[0]));
+        }
         // Tái sử dụng các phần tử còn lại cho Tin Tức Mới Nhất
         dispatch(setLatestNews(hotRes.data?.results.slice(1) || []));
         dispatch(setFeaturedNews(featuredRes.data?.results || []));

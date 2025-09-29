@@ -10,6 +10,7 @@ import NewsCard from "../components/card/cardnew";
 import "../styles/category.css"; // CSS cho trang
 import { Loading } from "../components/loading";
 import type { RootState } from "../redux/store";
+import CardCategory from "../components/card/CardCategory";
 
 const CategoryPage: React.FC = () => {
   const { type } = useParams<{ type: string }>(); // Lấy type từ URL 
@@ -54,7 +55,7 @@ const CategoryPage: React.FC = () => {
       <h2>Thể loại: {type}</h2>
       <div className="news-grid">
         {categoryNews.map((news: NewsItem) => (
-          <NewsCard
+          <CardCategory
             key={news.article_id}
             id={news.article_id}
             title={news.title}
