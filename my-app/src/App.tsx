@@ -11,7 +11,6 @@ function App() {
     <BrowserRouter> 
       <div className="app-wrapper">
         <Header /> 
-        
         <AppRouter /> 
         <Footer />
       </div>
